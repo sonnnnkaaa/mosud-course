@@ -105,7 +105,3 @@ ALTER TABLE olist.order_payments ADD CONSTRAINT fk_payments_order
     FOREIGN KEY (order_id) REFERENCES olist.orders(order_id);
 ALTER TABLE olist.order_reviews ADD CONSTRAINT fk_reviews_order
     FOREIGN KEY (order_id) REFERENCES olist.orders(order_id);
-
-\copy olist.customers
-FROM 'D:\7_sem\mosud-course\data\olist\olist_customers_dataset.csv'
-WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
